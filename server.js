@@ -19,7 +19,7 @@ app.prepare().then(() => {
 }));
 
   server.all('*', (req, res) => {
-    console.log('+++++Request URL:', req.url);
+    // console.log('+++++Request URL:', req.url);
     return handle(req, res);
   });
 
